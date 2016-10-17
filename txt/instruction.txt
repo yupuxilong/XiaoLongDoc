@@ -1,0 +1,74 @@
+Git使用
+一.Git和SVN的区别
+SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而干活的时候，用的都是自己的电脑，所以首先要从中央服务器哪里得到最新的版本，然后干活，干完后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，如果在局域网还可以，带宽够大，速度够快，如果在互联网下，如果网速慢的话，就纳闷了。
+Git是分布式版本控制系统，那么它就没有中央服务器的，每个人的电脑就是一个完整的版本库，这样，工作的时候就不需要联网了，因为版本都是在自己的电脑上。既然每个人的电脑都有一个完整的版本库，那多个人如何协作呢？比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。
+二.Git的安装
+到Git官网下载对应操作系统的git安装包默认安装，运行Git Bash,会弹出一个类似命令窗口的东西，说明Git安装成功.
+1.安装完成过后需要进行一步设置，在命令行输入如下命令：
+a： git config --global user.name "你的用户名"
+b:  git config --global user.email "你的邮箱"
+注意：git config --global参数，有了这个参数表示这台计算机的所有Git仓库都使用这个配置，当然你也可以对某个仓库指定不同的用户名和邮箱。
+三.Git的使用
+1.创建版本库
+    cd命令进入将要创建版本库的目录（如 testgit，可使用mkdir命令），执行git init命令,这个目录就变成可以被Git管理的仓库了，这时候目录下回多出一个.git目录，不要手动乱改里面的东西，可能会破坏git仓库。
+2.提交流程
+    新建readme.txt,输入如下内容：11111111
+    第一步：使用命令 git add readme.txt添加到暂存区里面去。如下：
+    如果没有任何提示，说明已经添加成功了。
+    第二步：用命令 git commit告诉Git，把文件提交到仓库。
+    命令：git commit -m "注释（不能为空）"
+    现在我们已经提交了一个readme.txt文件了，我们下面可以通过命令git status来查看是否还有文件未提交。如果修改readme.txt的内容，增加一行22222222，继续使用 git status，我们能看到提示文件被修改，可通过git diff readme.txt来查看改动。
+    git log 和git log --pretty=oneline用来显示提交记录。
+    回退到上一个版本，可以通过git reset --hard HEAD^或者git reset --hard HEAD~1（回退到上几个版本的数字）
+    git reset --hard命令可以恢复到最新版本修改，前提是命令窗口未关闭，如果关闭了，可使用git reflog命令查看所有版本提交信息，并使用git reset --hard efc54d(版本号) 来恢复版本
+四.远程仓库
+    在了解之前，先注册github账号，由于你的本地Git仓库和github仓库之间的传输是通过SSH加密的，所以需要一点设置：
+    第一步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果有的话，直接跳过此如下命令，如果没有的话，打开命令行，输入如下命令：
+
+        ssh-keygen  -t rsa –C “youremail@example.com”, 
+
+        id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+
+    第二步：登录github,打开” settings”中的SSH Keys页面，然后点击“Add SSH Key”,填上任意title，在Key文本框里黏贴id_rsa.pub文件的内容。
+1.如何添加远程库
+    我们已经在本地创建了一个Git仓库后，又想在github创建一个Git仓库，并且希望这两个仓库进行远程同步，这样github的仓库可以作为备份，又可以其他人通过该仓库来协作。
+    首先，登录github上，然后在右上角找到“create a new repo”创建一个新的仓库。repository name填入testgit，其他报纸默认，点击Create repository，
+    在GitHub上这个仓库目前是空的，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后把本地仓库的内容推送到GitHub仓库。
+    现在，我们根据GitHub的提示，在本地的testgit仓库下运行命令：
+          git remote add origin https://github.com/yupuxilong/testgit.git
+          把本地库的内容推送到远程，使用 git push -u origin master命令，实际上是把当前分支master推送到远程。
+          由于远程库是空的，我们第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。从现在起，只要本地作了提交，就可以通过如下命令：git push origin master
+          把本地master分支的最新修改推送到github上了，现在你就拥有了真正的分布式版本库了。
+2.如何从远程库克隆
+    首先，登录github，创建一个新的仓库，名字叫testgit2.
+    git clone https://github.com/yupuxiling/testgit2 这样本地库就克隆成功了，
+3.创建分支和合并
+ 创建分支：
+ 分支相关的命令
+   查看分支：git branch
+   创建分支：git branch name
+   切换分支：git checkout name
+   创建+切换分支：git checkout –b name
+   合并某分支到当前分支：git merge name
+   合并分支切保留分支信息 ：git merge --no-ff -m"注释" name
+   删除分支：git branch –d name
+   查看提交信息（包括分支信息）git log --graph（物理视图） --pertty=oneline（单行显示） --abbrev-commit（暂时不知道）
+解决冲突：
+    当在分支上做了改动并且提交了，当主分支也做了修改并提交，当执行git merge name时会提示冲突，这时在本地解决冲突在提交即可。
+分支策略：
+    首先master主分支应该是非常稳定的，也就是用来发布新版本，一般情况下不允许在上面干活，干活一般情况下在新建的dev分支上干活，干完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。
+ bug分支：
+     当正在dev分支上进行开发时，需要解决一个短时间内的bug时，我们需另建一个分支，在此之前执行git stash来隐藏“dev分支工作现场，等以后恢复现场继续工作”，当完成bug分支的合并工作过后切换到dev分支，执行git stash list可以看到隐藏的工作现场，可通过git stash apply恢复，并用git stash drop来删除一条记录；另一种方式是使用git stash pop恢复并删除stash内容。
+多人协作：
+1.推送分支
+    git push origin master|dev等
+2.抓取分支
+乙克隆远程从库到本地git clone https://github.com/yupuxilong/testgitRepo
+把远程仓库的dev分支到本地： git checkout -b dev origin/dev
+修改并推送至远程仓库 git push origin dev
+甲修改dev分支并推送，提示推送失败，甲从远程仓库抓取 git pull还是提示失败，原因是没有指定本地dev与远程origin/dev分支的链接git branch --set-upstream dev origin/dev,这时再运行git pull，抓取成功，自动合并提示冲突，手动修改过后再提交，推动至远程仓库
+
+因此：多人协作工作模式一般是这样的：
+首先，可以试图用git push origin branch-name推送自己的修改.
+如果推送失败，则因为远程分支比你的本地更新早，需要先用git pull试图合并。
+如果合并有冲突，则需要解决冲突，并在本地提交。再用git push origin branch-name推送。

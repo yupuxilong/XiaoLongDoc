@@ -1,0 +1,149 @@
+﻿www.jiluniwo.cn  纪录频道
+http://plugins.jetbrains.com/?androidstudio   android studio插件
+http://zhidao.baidu.com/link?url=D260LjuND20u1Vrhk_-zA9AX4UmNB0cnokHlq4Vu1Ow4R0aTDWb4_qGS2ED_3WSOBC5Mfg2sOoDb3ZHdazA_fjljZQe7L2FctV_eDqpes0O   office相关
+
+android开发官方培训课程
+http://hukai.me/android-training-course-in-chinese/index.html
+The Swift Programming Language
+https://github.com/numbbbbb/the-swift-programming-language-in-chinese
+
+https://github.com/android-cn/android-jobs  //Android安卓工作
+
+https://chris.banes.me
+
+http://android-developers.blogspot.co.uk/
+
+https://github.com/bboyfeiyu/android-tech-frontier
+
+https://github.com/facebook/fresco
+
+http://cube-sdk.liaohuqiu.net/cn/
+
+https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh
+
+https://github.com/daimajia/AndroidSwipeLayout
+
+https://github.com/bumptech/glide
+
+https://github.com/square/picasso
+
+https://github.com/Trinea/android-demo
+
+leancloud  IM框架
+
+项目地址：https://github.com/loopj/android-async-http   异步HTTP框架
+文档介绍：http://loopj.com/android-async-http/
+特点：
+(1) 在匿名回调中处理请求结果
+(2) 在UI线程外进行http请求
+(3) 文件断点上传
+(4) 智能重试
+(5) 默认gzip压缩
+(6) 支持解析成Json格式
+(7) 可将Cookies持久化到SharedPreferences
+
+
+ViewPager+fragment+RadioGroup取消预加载的解决方法
+http://www.2cto.com/kf/201501/368954.html
+
+//Android 多条件筛选下拉布局
+https://github.com/JayFang1993/DropDownMenu
+
+http://www.liaohuqiu.net/cn/posts/leak-canary-read-me/   内存泄露检测
+
+
+http://www.igniterealtime.org
+
+http://codeigniter.org.cn/
+
+https://pingxx.com/  支付SDK
+
+https://github.com/makovkastar/FloatingActionButton 
+
+https://github.com/afollestad/material-dialogs
+https://github.com/navasmdc/MaterialDesignLibrary
+
+http://www.cnblogs.com/tiantianbyconan/p/4116304.html  直接拿来用！十大Material Design开源项目
+
+Material-design
+http://www.google.com/design/spec/material-design/introduction.html# 
+http://design.1sters.com/    
+https://github.com/1sters/material_design_zh
+
+http://www.open-open.com/lib/view/open1416663769680.html  ANDROID L - Material Design详解（动画篇）
+http://blog.csdn.net/jjwwmlp456/article/details/40617495  Android(Lollipop/5.0) Material Design(七) 自定义动画
+
+http://www.open-open.com/lib/view/open1437662138631.html  recyclerview可变spanCount
+
+http://android-color-generator.com/  color.xml生成器
+ 
+Design Android with Material-Design
+https://developer.android.com/design/material/index.htm控件
+https://github.com/code-troopers/android-betterpickers   时间空间
+
+
+http://android-developers.blogspot.com/   开发博客
+
+https://github.com/Trinea/android-open-project  开源项目
+
+http://blog.csdn.net/shimiso/article/details/19771915
+
+http://www.trinea.cn/android/android-open-project-summary/
+
+https://github.com/cyrilmottier
+
+http://jakewharton.github.io/butterknife/  注解
+
+
+http://www.it165.net/pro/html/201503/36908.html 注解配置
+http://androidannotations.org/注解官网
+https://github.com/excilys/androidannotations   注解
+https://github.com/excilys/androidannotations/wiki/FirstActivity
+https://github.com/excilys/androidannotations/wiki/Cookbook
+https://github.com/excilys/androidannotations/wiki/AvailableAnnotations
+
+side-menu android https://github.com/Yalantis/Side-Menu.Android
+
+各种尺寸图片生成器 http://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.space.trim=1&source.space.pad=0&size=24&padding=8&color=33b5e5%2C100&name=ic_example
+
+
+https://github.com/klinker24/Talon-for-Twitter  
+
+http://www.javaapk.com/demo 源代码
+http://p.codekk.com/
+
+web访问Android源码
+http://grepcode.com/project/repository.grepcode.com/java/ext/com.google.android/android
+
+http://blog.csdn.net/jdsjlzx/article/details/45891551 屏幕适配
+https://github.com/hongyangAndroid/Android_Blog_Demos
+
+低版本实现Material Design
+http://my.oschina.net/sammy1990/blog/345716?fromerr=cAojUHQA
+
+
+wifi相关
+http://www.cnblogs.com/cxcco/archive/2012/02/08/2343189.html
+
+ImageViw 进阶
+http://gundumw100.iteye.com/blog/1192419
+Drawable进阶
+http://blog.csdn.net/lmj623565791/article/details/43752383
+
+交互
+http://www.open-open.com/lib/view/open1411443332703.html#_label7
+
+http://wangchangshuai0010.iteye.com/blog/1568085  mimeType
+https://github.com/gcacace/android-signaturepad 签名
+
+
+https://github.com/geeeeeeeeek/git-recipes  git教程
+
+http://www.jianshu.com/p/54daee8ae2a9 雪花
+
+https://stackedit.io/editor  //文档在线编辑器
+
+
+http://www.cnblogs.com/niray/p/5242985.html  Android Studio apk打包总结
+
+

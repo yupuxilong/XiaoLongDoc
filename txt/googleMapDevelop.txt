@@ -1,0 +1,72 @@
+
+
+kywwphctjcmtujux  16位应用专用密码
+
+
+
+
+127.0.0.1 localhost
+#Google主页
+203.208.46.146 www.google.com
+#这行是为了方便打开Android开发官网 现在好像不VPN也可以打开
+74.125.113.121 developer.android.com
+#更新的内容从以下地址下载
+203.208.46.146 dl.google.com
+203.208.46.146 dl-ssl.google.com
+****************************************
+
+
+ protected <T> T doTask(String urlPath, Map<String, String> map,
+            HandleReturnMsgFromServerListener<T> handleReturnMsgFromServerListener) throws ClientProtocolException,
+            IOException, JSONException {
+        String rootUrl = getRootURL(urlPath);
+        HttpClient client = new DefaultHttpClient();
+//        MultipartEntity entity = new MultipartEntity();
+        final HttpPost request = new HttpPost(rootUrl);
+
+        List <NameValuePair> nvps = new ArrayList<NameValuePair>();
+        if (map != null && map.size() > 0) {
+            for (Entry<String, String> entry : map.entrySet()) {
+                nvps.add(new BasicNameValuePair(entry.getKey(),entry.getValue()));
+                Log.d(TAG,"KEY="+entry.getKey()+",VALUE="+entry.getValue());
+//                entity.addPart(entry.getKey(), new StringBody(entry.getValue(), Charset.forName(CODE_TYPE)));
+            }
+        }
+        request.setEntity(new UrlEncodedFormEntity(nvps,CODE_TYPE));
+        HttpParams params = client.getParams();
+        params.setParameter(CoreConnectionPNames.SO_TIMEOUT, TIME_OUT);
+        params.setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, TIME_OUT);
+        HttpResponse response = client.execute(request);
+        int code = response.getStatusLine().getStatusCode();
+        if (code == OK) {
+            String returnMsg = readData(response);
+            Log.i(TAG, returnMsg);
+            return handleReturnMsgFromServerListener.handleData(code, returnMsg);
+
+        } else {
+            Log.d(TAG, "doTask-服务器访问代码是->" + code);
+        }
+        return  handleReturnMsgFromServerListener.handleData(code, "服务器访问异常");
+    }
+	
+	
+
+         https://jcenter.bintray.com/com/afollestad/material-dialogs/0.7.1.3/material-dialogs-0.7.1.3.pom
+         https://jcenter.bintray.com/com/afollestad/material-dialogs/0.7.1.3/material-dialogs-0.7.1.3.jar
+		 
+		 
+		 huawei
+		 外置SD卡路径--->/storage/emulated/0
+		 绝对内置SD路径--->/data
+		 sanxing
+		 外置SD卡路径--->/storage/emulated/0
+		 绝对内置SD路径--->/data
+		 
+		 Google Nexus 4
+		 外置SD卡路径--->/mnt/sdcard
+		 绝对内置SD路径--->/data
+     
+		 
+
+
+

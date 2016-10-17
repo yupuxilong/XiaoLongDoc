@@ -1,0 +1,45 @@
+https://182.140.140.7:8443/svn/YDZF
+
+http://172.16.0.251:81/  OA地址
+http://218.89.222.119:81/ OA外网地址
+
+
+struts2注解祥释
+http://struts.apache.org/development/2.x/docs/annotations.html
+
+https://xhr.spec.whatwg.org/
+
+Gmail Address
+173.194.127.117
+173.194.127.118
+
+
+ android:background="#FCFCFC"  Spinner无边框
+
+坐标系的相互转换
+http://blog.csdn.net/findsafety/article/details/12442639
+
+
+
+D:\Tesseract-ocr\tesseract.exe orderNo.tif orderNo batch.nochop makebox
+
+
+
+D:\Tesseract-ocr\tesseract.exe orderNo.tif orderNo nobatch box.train
+
+D:\Tesseract-ocr\unicharset_extractor.exe orderNo.box
+
+font_properties
+orderNo 0 0 0 0 0
+
+D:\Tesseract-ocr\mftraining.exe -F font_properties -U unicharset orderNo.tr
+
+D:\Tesseract-ocr\cntraining.exe orderNo.tr
+
+在目录下应该生成若干个文件了，把unicharset, inttemp, normproto, pfftable这四个文件加上前缀“orderNo.”。然后输入命令：
+
+D:\Tesseract-ocr\combine_tessdata.exe orderNo.
+
+
+此时目录下“orderNo.traineddata”的文件拷贝到tesseract程序目录下的“tessdata”目录。
+

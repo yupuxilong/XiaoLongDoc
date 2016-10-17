@@ -1,0 +1,46 @@
+﻿
+https://dribbble.com/
+https://www.behance.net/
+www.easyicon.net
+http://lackar.com/aa/
+
+http://how-old.net/#
+
+https://500px.com/flow   代码提取图片
+http://pixabay.com/
+.
+http://www.iconfont.cn/        @FrIeNdS 你再也不用找icon了
+
+
+http://www.ui.cn/project.php?id=39539
+http://www.ui.cn/project.php?id=40260
+
+
+
+http://www.cyhd.net/html/2014/iconpng_0813/14.html   //1000+线性图标PSD免费下载
+
+https://chris.banes.me
+
+
+
+ 
+
+
+
+http://blog.csdn.net/sun1021976312/article/details/28599871
+
+http://blog.csdn.net/YUZHIBOYI/article/details/32709903
+
+http://developer.android.com/guide/topics/ui/actionbar.html
+
+http://blog.csdn.net/lilu_leo/article/details/7671533
+
+  DraweeController draweeController = Fresco.newDraweeControllerBuilder()
+        .setImageRequest(imageRequest)
+        .setOldController(view.getController())
+        .setControllerListener(view.getListener())
+
+        .setAutoPlayAnimations(true)
+        .build();
+    view.setController(draweeController);
+

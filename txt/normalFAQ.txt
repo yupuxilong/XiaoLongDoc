@@ -1,0 +1,4 @@
+http://stackoverflow.com/questions/29756188/java-finished-with-non-zero-exit-value-2-android-gradle
+
+adb启动失败或端口被占用
+https://jitpack.io/com/github/Philjay/MPAndroidChart/v2.2.4-sources.jar
