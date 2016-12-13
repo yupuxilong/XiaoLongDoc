@@ -1,0 +1,1 @@
+http://stormzhang.com/android/2014/06/27/manage-java-on-macosx/  Mac下安装和管理JAVA
