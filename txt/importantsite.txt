@@ -81,6 +81,7 @@ Design Android with Material-Design
 https://developer.android.com/design/material/index.htm控件
 https://github.com/code-troopers/android-betterpickers   时间空间
 
+http://www.trinea.cn/  trinea个人主页
 
 http://android-developers.blogspot.com/   开发博客
 
@@ -93,6 +94,11 @@ http://www.trinea.cn/android/android-open-project-summary/
 https://github.com/cyrilmottier
 
 http://jakewharton.github.io/butterknife/  注解
+
+http://blog.csdn.net/pgalxx/article/details/6766677   自定义View的属性详解
+
+
+https://medium.com/@Sserra90/android-writing-a-compound-view-1eacbf1957fc#.zcncbd8bl  自定义GroupView
 
 
 http://www.it165.net/pro/html/201503/36908.html 注解配置
