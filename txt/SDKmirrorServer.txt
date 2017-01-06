@@ -1,6 +1,8 @@
 http://stackoverflow.com/questions/30856785/how-to-add-apache-http-api-legacy-as-compile-time-dependency-to-build-grade-fo/32084739#32084739
 
-http://mirrors.neusoft.edu.cn/android/repository/   资源下载sdk
+http://mirrors.neusoft.edu.cn/android/repository/   android资源下载(东软镜像)
+
+https://dl.google.com/android/repository/ 官网相关资源下载
 
 http://www.cnblogs.com/rayray/p/4238416.html
 
