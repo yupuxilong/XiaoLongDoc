@@ -75,6 +75,10 @@ http://blog.csdn.net/jjwwmlp456/article/details/40617495  Android(Lollipop/5.0) 
 
 http://www.open-open.com/lib/view/open1437662138631.html  recyclerview可变spanCount
 
+https://medium.com/@Sserra90/android-writing-a-compound-view-1eacbf1957fc#.ka5s0qntd   CustomViewGroup
+
+https://blog.aritraroy.in/20-awesome-open-source-android-apps-to-boost-your-development-skills-b62832cf0fa4#.gtths05az 加速android开发的二十大开源项目
+
 http://android-color-generator.com/  color.xml生成器
  
 Design Android with Material-Design
